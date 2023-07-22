@@ -74,9 +74,10 @@ body {
 
     width: 300px;
     height: 300px;
-    top:18%;
+    top:15%;
     left:40%;
-    border-spacing:15px solid rgba(255, 176, 29, 0.5);
+    border:12px solid rgba(169, 104, 35, 1);
+    box-shadow: 0px 6px 5px black;
     visibility: visible;
     position: absolute;
     background-image: url("https://bestanimations.com/media/music/623068052laser-show-rave-concert-animated-gif-image-2.gif");
