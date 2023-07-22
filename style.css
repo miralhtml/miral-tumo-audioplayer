@@ -1,0 +1,375 @@
+html , 
+body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+}
+
+.main {
+
+        margin: 0; 
+        padding: 0; 
+        width: 100%;
+        height: 100%;
+
+
+
+        background-image: url("https://bestanimations.com/media/music/623068052laser-show-rave-concert-animated-gif-image-2.gif");
+        background-size: cover;
+        filter: blur(8px);
+        background-position-x: 50%;
+        background-position-y: 50%;
+
+    }
+
+
+.player {
+
+    background-color: rgba(169, 104, 35, 0.5);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:65%;
+    left:50%;
+    width: 550px;
+    height: 180px;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 2px 4px 2px black;
+
+
+}
+
+
+#Icon{
+
+    width: 100px;
+    height: 100px;
+    top:15%;
+    left:10%;
+    visibility: visible;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    animation: render 5s ease-in-out infinite;
+
+} 
+
+@keyframes render {
+     
+     0%{
+        opacity: 0;
+     }
+
+     50%{
+        opacity: 1;
+     }
+
+     100%{
+        opacity: 0;
+     }
+
+}
+
+.row1{
+
+    width: 300px;
+    height: 300px;
+    top:18%;
+    left:40%;
+    border-spacing:15px solid rgba(255, 176, 29, 0.5);
+    visibility: visible;
+    position: absolute;
+    background-image: url("https://bestanimations.com/media/music/623068052laser-show-rave-concert-animated-gif-image-2.gif");
+    background-size: cover;
+    background-position-y: 35%;
+    background-position-x: 50%;
+    border-radius: 50%;
+    animation-name: rotation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes rotation {
+
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+#songTitle{
+
+    width: 100%;
+    height: 20%;
+    margin-top: 8px;
+    text-align: center;
+    font-family: monospace;
+    color: rgb(37, 32, 37);
+    font-size: 20px;
+
+}
+
+.row2{
+
+    width: 100%;
+    height: 80%;
+    background-color:  rgba(169, 104, 35, 0.5);
+}
+
+
+
+.play{
+
+    width: 100%;
+    height: 20%;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+
+}
+
+
+#play{
+
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    margin-top: 20px;
+}
+
+#pre{
+
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    margin-top: 20px;
+}
+
+#next{
+
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    margin-top: 20px;
+}
+
+#menyuButton{
+
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    margin-top: 20px;
+
+}
+
+.seek-bar{
+
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.handle{
+
+    width: 80%;
+    height: 8px;
+    background: linear-gradient(to right , #ff0400 0% , rgb(255, 234, 0));
+    border-radius: 25px;
+}
+
+.fill{
+
+    height: 11px;
+    width: 10px;
+    border-radius: 25px;
+    background-color: black;
+    z-index: 999;
+    margin-top: -1.5px;
+    margin-left: -1.5px;
+}
+
+#currentTime{
+
+    width: 50%;
+    height: 100%;
+    color: rgb(255, 170, 0);
+    margin-left: 220px;
+    margin-top: -25px;
+}
+
+.mute{
+
+    height: 40%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.muteButtons{
+
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+#mute{
+
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    margin: 5px;
+}
+
+#decrease{
+
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+    margin: 5px;
+}
+
+#increase{
+
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+    margin: 5px;
+}
+
+.panelMenyu {
+
+    background-color: rgba(169, 104, 35, 0.5);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:77%; /*  right: 500px ; */
+    width: 200px;
+    height: 380px;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 2px 4px 2px black;
+    visibility: hidden;
+    display: flex;
+    flex-wrap: wrap
+
+}
+
+.oneWayTicket{
+
+    width: 50%;
+    height: 20%;
+    background-image: url("https://www.basicthinking.de/blog/wp-content/uploads/2023/01/music-lm-google-ki.jpg");
+    background-size: cover;
+    background-position-y: 35%;
+}
+
+.godfather{
+
+    width: 50%;
+    height: 20%;
+    background-image: url("https://hips.hearstapps.com/hmg-prod/images/hero-image-the-godfather-gettyimages-159837887.jpg?resize=1200:*");
+    background-size: cover;
+    background-position-y: 35%;
+    background-position-x: 40%;
+}
+
+.garune{
+
+    width: 50%;
+    height: 20%;
+    background-image: url("https://i.ytimg.com/vi/YTsqZiceniY/hqdefault.jpg");
+    background-size: cover;
+    background-position-y: 35%;
+}
+
+.non{
+
+    width: 50%;
+    height: 20%;
+    background-image: url("https://i.scdn.co/image/ab67616d0000b2733d69a1082b9d676263912178");
+    background-size: cover;
+    background-position-y: 35%;
+}
+
+.taganka{
+
+    width: 50%;
+    height: 20%;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnF8Syd6tvTA-xokx-UKgVUl_4Z2HMUmGEqBtOhokyLgIZnSE7RUWC7dyjcJQ8OBaCj4k&usqp=CAU");
+    background-size: cover;
+    background-position-y: 35%;
+}
+
+.aram{
+
+    width: 50%;
+    height: 20%;
+    background-image: url("https://i1.sndcdn.com/artworks-000004450276-9r4qnq-t500x500.jpg");
+    background-size: cover;
+    background-position-y: 35%;
+
+}
+
+.ruben{
+
+    width: 50%;
+    height: 20%;
+    background-image: url("https://www.tert.am/cache_image/news_images/429/1285140_3/f5476b43a1574f_5476b43a15789-770x510.jpg");
+    background-size: cover;
+    background-position-y: 35%;
+
+}
+
+.sharl{
+
+    width: 50%;
+    height: 20%;
+    background-image: url("https://yt3.googleusercontent.com/ytc/AOPolaSLbuGF0oMRWtGgcvudk_sz0Vmto6_ZisCpdxtF=s900-c-k-c0x00ffffff-no-rj");
+    background-size: cover;
+    background-position-y: 35%;
+
+}
+
+.tata{
+
+    width: 50%;
+    height: 20%;
+    background-image: url("https://i.scdn.co/image/ab67616d0000b273566dd55d5453e24531221ee2");
+    background-size: cover;
+    background-position-y: 35%;
+
+}
+
+.sovet{
+
+    width: 50%;
+    height: 20%;
+    background-image: url("https://csonekl.ru/wp-content/uploads/2021/04/9-maya-den-pobedy.png");
+    background-size: cover;
+    background-position-y: 35%;
+
+}
+
+
+/* https://youtube.com/shorts/4Lzc6wnCJrU?feature=share */
+
+
+
+
+
+
+
+
+

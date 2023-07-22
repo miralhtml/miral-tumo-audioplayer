@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MirAl AudioPlayer</title>
+    <link rel="icon" type="image/x-icon" href="images/3844724.png">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+                 <div class="main"  id="main" > </div>
+                 
+                         <img src="images/3844724.png" id ="Icon" alt="">
+               <div class="row1"></div> 
+                 <div class="player"> 
+
+                       
+                        <div id="songTitle">
+                             Title
+                        </div>
+                        <div class="row2">
+                                  <div class="play">
+                                            <img src="images/previous.png" onclick="pre()" id="pre" alt="">       
+                                            <img src="images/play-button-arrowhead.png" onclick="playOrPauseSong()" id="play" alt="">       
+                                            <img src="images/next.png" onclick="next()" id="next" alt="">   
+                                            <img src="images/3643763-list-mark-menu-option-sign_113447.png" onclick="menyu()" id="menyuButton" alt="">   
+                                  </div>
+                                  <div class="seek-bar">
+                                                <div class="handle">
+                                                      <div class="fill">
+
+                                                      </div>
+                                                </div>
+                                  </div>
+                                  <div class="mute">
+                                                    <div id="currentTime">00 : 00 / 00 : 00</div>
+                                                    <div class="muteButtons">
+                                                           <img src="images/volume-down.png" onclick="decrease()" id="decrease" alt="">
+                                                           <img src="images/volume.png" onclick="mute()" id="mute" alt="">
+                                                           <img src="images/increase-volume.png" onclick="increase()" id="increase" alt="">
+                                                    </div>
+
+                                  </div>
+
+
+                     </div>
+                        
+                
+                </div>
+
+                <div class="panelMenyu">
+                     
+                     <div class="oneWayTicket" onclick="oneWayTicket()"  alt=""></div>
+                     <div class="godfather" onclick="godfather()"  alt=""></div>
+                     <div class="garune" onclick="garune()"  alt=""></div>
+                     <div class="non" onclick="non()" alt=""></div>
+                     <div class="taganka" onclick="taganka()"  alt=""></div>
+                     <div class="aram" onclick="aram()"  alt=""></div>
+                     <div class="ruben"onclick="ruben()"alt=""></div>
+                     <div class="sharl"onclick="sharl()"alt=""></div>
+                     <div class="tata"onclick="tata()"alt=""></div>
+                     <div class="sovet"onclick="sovet()"alt=""></div>
+                
+                    </div>
+
+                <script src="script.js"></script>
+
+</body>
+</html>
