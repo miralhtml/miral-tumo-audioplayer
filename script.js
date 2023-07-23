@@ -112,8 +112,6 @@ var data = {
                   "https://csonekl.ru/wp-content/uploads/2021/04/9-maya-den-pobedy.png"
 
             ]
-
-
 }
 
 let song = new Audio()
@@ -121,8 +119,6 @@ let song = new Audio()
 window.onload = function (){
 
     playSong()
-
-
 }
 
 var currentSong = 0
@@ -137,7 +133,6 @@ function playSong(){
     let img = document.getElementsByClassName("row1")
     img[0].style.backgroundImage = "url("+ data.poster[currentSong] +")"
     song.play()
-
 }
 
 function playOrPauseSong(){
@@ -152,7 +147,6 @@ function playOrPauseSong(){
                 song.pause()
                 play.src = "images/play-button-arrowhead.png"
         }
-
 }
 
 song.addEventListener("timeupdate",function (){
@@ -167,9 +161,14 @@ song.addEventListener("timeupdate",function (){
     fill[0].style.marginLeft = position * 100 + "%"
 
     convertTime(song.currentTime)
+
+    
+
     if (song.ended){
 
-        song.next()
+        currentSong++
+        playSong()
+
        
     }
     
@@ -191,7 +190,6 @@ function convertTime(secounds){
 
 
       totalTime(Math.round(song.duration))
-
 }
 
 
@@ -204,9 +202,6 @@ function totalTime(secounds){
 
 
     currentTime.textContent += " / " + min  + " : " + sec
-
-
-
 }
 
 function oneWayTicket(){
@@ -366,5 +361,8 @@ function mute(){
 
  }
 
-
+//  function seekTo(){
+//     let seekto = song.duration * (handle.value / 100);
+//     position = seekto;
+// }
 

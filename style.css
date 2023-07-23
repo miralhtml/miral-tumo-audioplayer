@@ -20,26 +20,7 @@ body {
         filter: blur(8px);
         background-position-x: 50%;
         background-position-y: 50%;
-
     }
-
-
-.player {
-
-    background-color: rgba(169, 104, 35, 0.5);
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top:65%;
-    left:50%;
-    width: 550px;
-    height: 180px;
-    border-radius: 25px;
-    overflow: hidden;
-    box-shadow: 2px 4px 2px black;
-
-
-}
-
 
 #Icon{
 
@@ -51,9 +32,7 @@ body {
     position: absolute;
     transform: translate(-50%,-50%);
     animation: render 5s ease-in-out infinite;
-
 } 
-
 @keyframes render {
      
      0%{
@@ -70,26 +49,43 @@ body {
 
 }
 
+.player {
+
+    background-color: rgba(169, 104, 35, 0.5);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:65%;
+    left:50%;
+    width: 550px;
+    height: 180px;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 2px 4px 2px black;
+}
+
+
+
+
+
 .row1{
 
     width: 300px;
     height: 300px;
-    top:15%;
-    left:40%;
+    top:135px;
+    left: 550px; 
     border:12px solid rgba(169, 104, 35, 1);
+    transform: translate(-50%,-50%);
     box-shadow: 0px 6px 5px black;
-    visibility: visible;
-    position: absolute;
+    position: absolute; 
     background-image: url("https://bestanimations.com/media/music/623068052laser-show-rave-concert-animated-gif-image-2.gif");
     background-size: cover;
-    background-position-y: 35%;
+    background-position-y: 50%;
     background-position-x: 50%;
     border-radius: 50%;
     animation-name: rotation;
     animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-
 }
 
 @keyframes rotation {
@@ -113,7 +109,6 @@ body {
     font-family: monospace;
     color: rgb(37, 32, 37);
     font-size: 20px;
-
 }
 
 .row2{
@@ -132,7 +127,6 @@ body {
     justify-content: space-evenly;
     align-items: center;
     display: flex;
-
 }
 
 
@@ -166,7 +160,6 @@ body {
     height: 25px;
     background-size: cover;
     margin-top: 20px;
-
 }
 
 .seek-bar{
@@ -320,7 +313,6 @@ body {
     background-image: url("https://i1.sndcdn.com/artworks-000004450276-9r4qnq-t500x500.jpg");
     background-size: cover;
     background-position-y: 35%;
-
 }
 
 .ruben{
@@ -330,7 +322,6 @@ body {
     background-image: url("https://www.tert.am/cache_image/news_images/429/1285140_3/f5476b43a1574f_5476b43a15789-770x510.jpg");
     background-size: cover;
     background-position-y: 35%;
-
 }
 
 .sharl{
@@ -340,7 +331,6 @@ body {
     background-image: url("https://yt3.googleusercontent.com/ytc/AOPolaSLbuGF0oMRWtGgcvudk_sz0Vmto6_ZisCpdxtF=s900-c-k-c0x00ffffff-no-rj");
     background-size: cover;
     background-position-y: 35%;
-
 }
 
 .tata{
@@ -350,7 +340,6 @@ body {
     background-image: url("https://i.scdn.co/image/ab67616d0000b273566dd55d5453e24531221ee2");
     background-size: cover;
     background-position-y: 35%;
-
 }
 
 .sovet{
@@ -360,14 +349,16 @@ body {
     background-image: url("https://csonekl.ru/wp-content/uploads/2021/04/9-maya-den-pobedy.png");
     background-size: cover;
     background-position-y: 35%;
-
 }
 
 
-/* https://youtube.com/shorts/4Lzc6wnCJrU?feature=share */
+@media only screen and (max-width:480px){
 
-
-
+    .row1{
+    top:135px;
+    left: 68px; 
+ }
+}
 
 
 
