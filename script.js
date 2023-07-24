@@ -13,7 +13,7 @@
 // console.log(a)
 
 
-// console.log(3 % 10);
+// console.log(3 % 10); 
 
 
 //Data Type
@@ -149,10 +149,18 @@ function playOrPauseSong(){
         }
 }
 
+function repeat(){
+
+    // currentTime = 0;
+    // ;
+
+    location.reload();
+    playSong()
+
+}
+
 song.addEventListener("timeupdate",function (){
 
-    //console.log(song.duration)
-    //console.log(song.currentTime)
 
     let fill = document.getElementsByClassName("fill")
 
@@ -161,15 +169,12 @@ song.addEventListener("timeupdate",function (){
     fill[0].style.marginLeft = position * 100 + "%"
 
     convertTime(song.currentTime)
-
     
 
     if (song.ended){
 
         currentSong++
         playSong()
-
-       
     }
     
 })
@@ -177,8 +182,6 @@ song.addEventListener("timeupdate",function (){
 function convertTime(secounds){
 
       let currentTime = document.getElementById("currentTime")
-
-
       let min = Math.floor(secounds / 60)
       let sec = Math.floor(secounds % 60)
 
@@ -191,7 +194,6 @@ function convertTime(secounds){
 
       totalTime(Math.round(song.duration))
 }
-
 
 function totalTime(secounds){
     let min = Math.floor(secounds / 60)
@@ -316,7 +318,6 @@ function delay(ms){
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-
 function next() {
 
     currentSong++
@@ -340,12 +341,11 @@ function pre() {
     playSong()
 }
 
-
 function mute(){
 
     song.volume  = (song.volume == 1) ? 0 : 1
-
-
+    let muted = document.getElementById("mute")
+    muted.src = (song.volume == 1) ? "images/volume.png" : "images/volume-mute.png"
 
 }
 
