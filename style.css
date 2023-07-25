@@ -71,10 +71,10 @@ body {
 
     width: 300px;
     height: 300px;
-    /* top:135px;
-    left: 550px;  */
-    top: 340px;
-    left: 955px;
+    top:135px;
+    left: 550px; 
+/*     top: 340px;
+    left: 955px; */
     border:12px solid rgba(169, 104, 35, 1);
     transform: translate(-50%,-50%);
     box-shadow: 0px 6px 5px black;
